@@ -38,7 +38,7 @@ Sigue los pasos a continuación para configurar el proyecto en tu máquina local
 
 ## Pantallas de la Aplicación
 
-El proyecto incluye tres pantallas principales:
+El proyecto incluye cuatro pantallas principales:
 
 ### 1. **Login**
 - Es la página de inicio que contiene el formulario de Iniciar Sesion.
@@ -64,6 +64,9 @@ El proyecto incluye tres pantallas principales:
 
 - Al cargar la pagina el usuario sera dirigido a la pagina de **Login**.
 - Una vez que el usuario inicia sesión, sera redireccionado a la pagina de Home para ver los elementos llamados a traves de una api.
+- Una vez dentro de la pagina del home el usuario puede filtrar a escribir nombre de algun personaje dentro del Input inicial
+- Una vez el usuario dentro de la pantalla del Home podra agregar o Editar algun elemento renderizado de la API
+- Al darle algun boton como Editar o Crear se le redireccionara a una pagina con un formaluario para su dicha creacion o edicion.
 
 ### Consideracion
 - Por motivos de tiempo, no se agregaron mejoras como:

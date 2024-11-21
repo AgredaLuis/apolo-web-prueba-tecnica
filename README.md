@@ -50,7 +50,7 @@ El proyecto incluye cuatro pantallas principales:
 - Incluye :
   - **Input**: donde puedes filtrar por nombre en tiempo real.
   - **boton para editar**: Cada elemento contiene un boton para editar el contenido de dicho elemento.
-  - **bon para crear**: Un boton para crear un nuevo elemento
+  - **bonton para crear**: Un boton para crear un nuevo elemento
 ### 3. **EditCreate**
 - Pagina que contiene el formulario para poder crear o editar un componente.
 
@@ -73,6 +73,11 @@ El proyecto incluye cuatro pantallas principales:
 - Utilizar mejor los estados con un Context API que englobe la aplicacion y maneje los usuario y adicional otro para el manejo de la edicion del listado de componente del HOME
 - Modularizar La pagina de EditCreate en componentes para que su lectura sea mas sencillo
 - Creacion de componente UI como botones e Input que son muy reutilizados en la aplicacion
+
+
+### Valoraciones
+- Los usuarios creados son guardados el LocalStorage
+- Los elemtos cambiados y agregados del Home son guardados localmente , de modo que al recargar los cambios hechos seran borrados
 
 ## Tecnologías Utilizadas
 

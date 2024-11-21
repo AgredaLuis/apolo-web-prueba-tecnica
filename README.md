@@ -1,50 +1,82 @@
-# React + TypeScript + Vite
+# Prueba Técnica de Apollo Web- Luis Agreda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una prueba técnica desarrollada con **React**, **TypeScript**, y **Vite**, utilizando **Tailwind CSS** como framework de estilos. La aplicación incluye manejo de formularios con **React Hook Form**, integración con APIs externas, y un flujo de login con gestión de estado global.
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Requisitos](#requisitos)
+- [Instalación](#instalación)
+- [Pantallas de la Aplicación](#Pantallas-de-la-Aplicación)
+- [Tecnologías Utilizadas](#Tecnologías-Utilizadas)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Sigue los pasos a continuación para configurar el proyecto en tu máquina local:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clona el repositorio:**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   git clone https://github.com/AgredaLuis/apollo-web-prueba.git
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Accede al directorio del proyecto:**
+
+   ```bash
+   cd apollo-web-prueba
+
+3. **Instala las dependencias:**
+
+     ```bash
+     npm install
+
+4. **Inicia el servidor de desarrollo:**
+
+     ```bash
+     npm run dev
+
+
+## Pantallas de la Aplicación
+
+El proyecto incluye tres pantallas principales:
+
+### 1. **Login**
+- Es la página de inicio que contiene el formulario de Iniciar Sesion.
+- Permite registrar un nuevo usuario al ser oprimido "Registrarse".
+- Los usuarios Registrados estan guardados en el LocalStorage
+
+### 2. **Home**
+- Pantalla donde se muestra los elementos traidos por la API de Rick and Morty.
+- Incluye :
+  - **Input**: donde puedes filtrar por nombre en tiempo real.
+  - **boton para editar**: Cada elemento contiene un boton para editar el contenido de dicho elemento.
+  - **bon para crear**: Un boton para crear un nuevo elemento
+### 3. **EditCreate**
+- Pagina que contiene el formulario para poder crear o editar un componente.
+
+### 4. **404**
+- Página de error que aparece cuando un usuario intenta acceder a una ruta no existente.
+- Contiene un diseño simple e informativo, junto con un botón para regresar al Home.
+
+---
+
+### Flujo de Navegación
+
+- Al cargar la pagina el usuario sera dirigido a la pagina de **Login**.
+- Una vez que el usuario inicia sesión, sera redireccionado a la pagina de Home para ver los elementos llamados a traves de una api.
+
+### Consideracion
+- Por motivos de tiempo, no se agregaron mejoras como:
+- Utilizar mejor los estados con un Context API que englobe la aplicacion y maneje los usuario y adicional otro para el manejo de la edicion del listado de componente del HOME
+- Modularizar La pagina de EditCreate en componentes para que su lectura sea mas sencillo
+- Creacion de componente UI como botones e Input que son muy reutilizados en la aplicacion
+
+## Tecnologías Utilizadas
+
+- **Vite**: Herramienta de desarrollo rápido para aplicaciones modernas de frontend.
+- **React 18**: Librería para construir interfaces de usuario.
+- **TypeScript**: Superset de JavaScript para un desarrollo más robusto.
+- **Tailwind CSS**: Framework para el diseño responsivo y utilitario.
+- **React Router Dom**: Manejo de la rutas dentro de la aplicacion.
+
+

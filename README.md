@@ -1,4 +1,4 @@
-# Prueba Técnica de Apollo Web- Luis Agreda
+# Prueba Técnica de Apolo Web- Luis Agreda
 
 Este proyecto es una prueba técnica desarrollada con **React**, **TypeScript**, y **Vite**, utilizando **Tailwind CSS** como framework de estilos. La aplicación incluye manejo de formularios con **React Hook Form**, integración con APIs externas, y un flujo de login con gestión de estado global.
 
